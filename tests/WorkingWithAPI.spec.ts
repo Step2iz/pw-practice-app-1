@@ -61,4 +61,5 @@ test('Delete article', async ({ page, request }) => {
     await page.locator('h1', {hasText: "my first article2"}).click()
     await page.getByText("delete article").first().click()
     await expect(page.locator('.navbar-brand')).toHaveText('conduit');
+    //test
 })
